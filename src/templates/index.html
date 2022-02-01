@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="./../styles/css/index.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./../styles/css/navbar.css" type="text/css" media="all">
+    <link rel="stylesheet" href="./../styles/css/game.css" type="text/css" media="all">
+
+    <!-- jQuery -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <title>TicTacToe</title>
+  </head>
+
+  <body>
+    <header class="site-header">
+        <div class="wrapper site-header__wrapper">
+          <div class="site-header__start">
+            <a href="#" class="brand">Games</a>
+          </div>
+        <div class="site-header__middle">
+          <nav class="nav">
+            <div class="nav__toggle" aria-expanded="false" type="button">
+              <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
+            </div>
+            <ul class="nav__wrapper">
+              <li class="nav__item"><a href="#">Home</a></li>
+              <li class="nav__item"><a href="#">About</a></li>
+              <li class="nav__item"><a href="#">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="site-header__end">
+          <a href="#">Sign in</a>
+        </div>
+      </div>
+    </header>
+
+
+    <div class="bg-game">
+      <div class="first-space">
+        <h1>TicTacToe</h1>
+        <table id="tic-tac-toe">
+          <tr>
+            <td id="1" class="cell"></td>
+            <td id="2" class="cell"></td>
+            <td id="3" class="cell"></td>
+          </tr>
+          <tr>
+            <td id="4" class="cell"></td>
+            <td id="5" class="cell"></td>
+            <td id="6" class="cell"></tr>
+          </tr>
+          <tr>
+            <td id="7" class="cell"></td>
+            <td id="8" class="cell"></td>
+            <td id="9" class="cell"></td>
+          </tr>
+        </table>
+      </div>
+
+      <div class="second-space">
+
+        <p id="timer">&nbsp;</p>
+
+        <div class="container-players">
+          <div style="display: inline-flex">
+            <div><i id="arrow-p1" class="arrow-empty-p1"></i>Player 1 :&nbsp;</div>
+            <div class="score" id="score-player1"></div>&nbsp;
+          </div>
+
+          <div></div>
+
+          <div style="display: inline-flex">
+            <div><i id="arrow-p2" class="arrow-empty-2"></i>Player 2 :&nbsp;</div>
+            <div class="score" id="score-player2"></div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- scripts -->
+    <script type="text/javascript" src="./../js/scripts/game.js"></script>
+
+  </body>
+</html>
+
